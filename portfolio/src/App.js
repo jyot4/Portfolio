@@ -14,10 +14,11 @@ function App() {
       <Header/>
       <Routes>
         
-        <Route path='/headerRow'   element ={<HeaderRow/>} ></Route>
+        <Route path='/'   element ={<HeaderRow/>} ></Route>
         <Route path='/about' element={<About/>}></Route>
         <Route path ='/resume' element = {<Resume/>}></Route>
         <Route path='/contact' element = {<Contact/>}></Route>
+     
       </Routes>
       <Footer/>
       </BrowserRouter>

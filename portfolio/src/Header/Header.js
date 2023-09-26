@@ -1,24 +1,25 @@
 import React from 'react'
 import './Header.css'
-import HeaderRow from './HeaderRow'
+
+import { Link } from 'react-router-dom'
 
 
 
 function Header() {
   return (
-    <div>
+    <div >
       <header className="header">
-<a href="index.html" className="Portfolio"><span>P</span>ortfolio</a>
-
+{/* <a href="index.html" className="Portfolio"><span>P</span>ortfolio</a> */}
+<Link to= '/headerRow' className='Portfolio'><span>P</span>ortfolio</Link>
 <nav className="navbar">
 
-    <a href="">Home</a>
-  <a href="">About</a>
-  <a href="">Portfolio</a>
-  <a href="">Contact</a>
+    <Link to= '/'>Home</Link>
+    <Link to = '/about'> About</Link>
+    <Link to = '/resume'>Resume</Link>
+    <Link to ='/contact'> Contact</Link>
 </nav>
    </header>
-   <HeaderRow/>
+  
    </div>
   
   )
