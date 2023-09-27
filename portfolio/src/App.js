@@ -6,6 +6,7 @@ import About from './About/About'
 import Resume from './Resume/Resume'
 import Footer from './Footer/Footer'
 import Contact from './Contact/Contact'
+import MouseParticles from 'react-mouse-particles'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
      
       </Routes>
       <Footer/>
+      <MouseParticles g={5} color=" random" cull="col,image-wrapper"/>
       </BrowserRouter>
       
     </div>
