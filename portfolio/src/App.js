@@ -22,10 +22,13 @@ function App() {
      
       </Routes>
       <Footer/>
-      <MouseParticles g={5} color=" random" cull="col,image-wrapper"/>
+      <MouseParticles g={5} color="#F1C21B" cull="col,image-wrapper"/>
       </BrowserRouter>
       
     </div>
+   
+    
+    
   )
 }
 
