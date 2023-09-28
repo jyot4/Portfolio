@@ -1,8 +1,25 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Contact.css'
+import axios from 'axios'
 
 
 function Contact() {
+
+
+  const [name , setName ] = useState()
+  const [ email , setEmail] = useState()
+  const [text , setText] = useState()
+
+function handleSubmit(e){
+
+e.preventDefault()
+
+axios.post('http://localhost:8000/contactDetail' , {name ,email, text} )
+.then((response)=>{
+console.log(response.data)
+})
+
+}
   return (
     <div className='contact'>
       <h3> Contact</h3>
@@ -16,11 +33,13 @@ function Contact() {
       </div>
 
       <div className='contactRight'>
-        <input type='text' placeholder='Enter Your Name'/>
-        <input type='text' placeholder='Enter Your Email'/>
+        <form onSubmit={handleSubmit}>
+        <input type='text' placeholder='Enter Your Name' value={name} onChange={(e)=> setName(e.target.value)}/>
+        <input type='text' placeholder='Enter Your Email' value={email} onChange={(e)=> setEmail(e.target.value)}/>
 
-        <textarea placeholder='Message' rows= '4' cols= '50'></textarea>
+        <textarea placeholder='Message' rows= '4' cols= '50' value={text} onChange={(e)=>setText(e.target.value)}></textarea>
         <button type='submit'>Send Now</button>
+        </form>
       </div>
     </div>
   )
