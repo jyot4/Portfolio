@@ -7,6 +7,7 @@ import Resume from './Resume/Resume'
 import Footer from './Footer/Footer'
 import Contact from './Contact/Contact'
 import MouseParticles from 'react-mouse-particles'
+import Portfolio from './Portfolio/Portfolio'
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path='/about' element={<About/>}></Route>
         <Route path ='/resume' element = {<Resume/>}></Route>
         <Route path='/contact' element = {<Contact/>}></Route>
+        <Route path='/portfolio' element = {<Portfolio/>}></Route>
      
       </Routes>
       <Footer/>
