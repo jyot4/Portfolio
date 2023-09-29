@@ -1,5 +1,6 @@
 import React from 'react'
 import './Resume.css'
+import jyoti from '../About/jyoti.pdf'
 
 function Resume() {
   return (
@@ -52,7 +53,7 @@ function Resume() {
    <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila</p>
 </div>
 
-
+<a href={jyoti} className='download' download> Download</a>
   </div>
 
 

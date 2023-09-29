@@ -5,31 +5,20 @@ import { Link } from 'react-router-dom';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import Typewriter from 'typewriter-effect'
-import AOS from 'aos';
-import 'aos/dist/aos.css'; 
-AOS.init();
+
 
 
 function HeaderRow() {
 
 
-  useEffect(()=>{
-    AOS.init();
-  },[])
+ 
 
 
 
   return (
     <div>
      <section class="home"   >
-    <div class="home-content"     data-aos="zoom-in"
-    data-aos-offset="200"
-    data-aos-delay="100"
-    data-aos-duration="2000"
-    data-aos-easing="ease-in-out"
-    data-aos-mirror="true"
-    data-aos-once="true"
-    data-aos-anchor-placement="top-center">
+    <div class="home-content"     >
         <h3>Hello , I am</h3>
         <h1> Jyoti Vyas</h1>
        <p> And I am  </p>
@@ -62,7 +51,8 @@ function HeaderRow() {
        <Link to = ''><InstagramIcon/></Link>
       
        </div>
-       <a href="" class="btn">More About Me</a>
+       {/* <a href="" class="btn">More About Me</a> */}
+       <Link to= '/about' className='btn'>More About Me</Link>
     </div>
    </section> 
     </div>

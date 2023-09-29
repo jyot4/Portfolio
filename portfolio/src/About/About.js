@@ -28,7 +28,7 @@ function About() {
 
       <div className='right' data-aos="zoom-in"
     data-aos-offset="200"
-    data-aos-delay="100"
+    data-aos-delay="70"
     data-aos-duration="2000"
     data-aos-easing="ease-in-out"
     data-aos-mirror="true"
