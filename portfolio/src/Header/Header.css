@@ -13,10 +13,12 @@
      */
      padding: 20px 10px;
     display: flex;
+    transition:  all 0.9s ease;
     justify-content: space-between;
     align-items: center;
     background-color: black;
     color: white;
+    position: relative;
     /* position: fixed; */
     z-index: 99;
 
@@ -31,12 +33,16 @@
 }
 
 
-.navbar  a{
+.navbar ul {
+    display: flex;
+}
+
+.navbar  a {
     text-decoration: none;
     color: white;
     transition: 0.3s;
-    margin-left: 35px;
-    padding-right:30px ;
+    margin: 0px 5px;
+    padding:8px 20px;
     font-size: 18px;
     font-weight: 700;
 
@@ -134,14 +140,61 @@ display: inline-block;
 
 }
 
+.menu{
+display: none;
+}
+
 .btn:hover{
     background-color: rgb(70, 155, 188);
   
 }
 
 
-@media all and  ( max-width: 650px)  {
- 
-    
-    
+.menu  svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.css-i4bv87-MuiSvgIcon-root ,.close 
+svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.css-i4bv87-MuiSvgIcon-root{
+    font-size: 35px;
+    text-decoration: none;
+    color: skyblue;
 }
+
+
+
+
+@media all and  ( max-width: 800px)  {
+    
+    .navbar a{
+        padding: 5px 15px;
+        font-size: 17px;
+    }
+    .Portfolio{
+        font-size: 30px;
+    }
+
+}
+@media all and (max-width :680px){
+
+    .menu{
+        display: block;
+    }
+
+    .navbar{
+        width: 100%;
+        position: absolute;
+        transform: all 0.8s ease;
+       background-color: rgba(0, 0, 0, 0.4);
+        left: 0;
+    }
+    .navbar ul {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .navbar ul li{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+   
+    
+
