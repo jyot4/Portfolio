@@ -26,14 +26,14 @@ function Resume() {
   <h5>2022-2023</h5>
 
  <h4>KnwoledgeHut Upgrad</h4>
- <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila</p>
+ 
 
 
 <h2>BACHELOR OF BUSINESS ADMINISTRATION</h2>
    <h5>2018-2021</h5>
 
  <h4>Poornima University, japiur</h4>
-<p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila</p>
+
 
 
   </div>
