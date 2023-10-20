@@ -1,7 +1,10 @@
 import mongoose from "mongoose";
+import { config } from "dotenv"; 
+
+config()
 
 const connection = mongoose.connect(
-    "mongodb+srv://jyotivyas:sachin@cluster0.gbr080c.mongodb.net/?retryWrites=true&w=majority"
+    process.env.SECRET_KEY
 )
 
 export default connection

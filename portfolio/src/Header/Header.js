@@ -10,13 +10,13 @@ function Header() {
 
   const [icons, setIcons] = useState(false)
 
-  function starts() {
-
+  function starts(e) {
+e.preventDefault();
     setIcons(true)
 
   }
-  function stops() {
-
+  function stops(e) {
+    e.preventDefault();
     setIcons(false)
   }
 

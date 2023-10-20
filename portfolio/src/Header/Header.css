@@ -150,12 +150,12 @@ display: none;
 }
 
 
-.menu  svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.css-i4bv87-MuiSvgIcon-root ,.close 
-svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.css-i4bv87-MuiSvgIcon-root{
+.menu  svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.css-i4bv87-MuiSvgIcon-root  {
     font-size: 35px;
     text-decoration: none;
     color: skyblue;
 }
+
 
 
 
